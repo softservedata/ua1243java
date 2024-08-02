@@ -1,5 +1,14 @@
 package com.softserve.edu.orest.hw1;
 
+//Create Console Application project in Java.
+//In main() method write code for solving next tasks:
+//1) 1. Define integer variables a and b. Read values a and b from Console and calculate:
+//• a + b
+//• a - b
+//• a * b
+//• a / b.
+//Output obtained results.
+
 import java.util.Scanner;
 
 public class Task_3 {
