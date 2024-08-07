@@ -1,6 +1,4 @@
-package homework_Assignments.HW_2_package;
-
-import java.util.Scanner;
+package homework_Assignments_Dmytro_Livantsov.homeW_2_package;
 
 public class HW_Main_Task_3 {
     public static void main(String[] args) {

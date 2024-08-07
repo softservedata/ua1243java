@@ -1,7 +1,6 @@
-package homework_Assignments.HW_2_package;
+package homework_Assignments_Dmytro_Livantsov.homeW_2_package;
 
 import java.time.LocalDate;
-import java.util.Date;
 import java.util.Scanner;
 
 public class Person {
