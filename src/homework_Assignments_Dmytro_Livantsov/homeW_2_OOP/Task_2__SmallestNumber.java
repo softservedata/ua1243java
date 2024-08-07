@@ -1,8 +1,8 @@
-package homework_Assignments_Dmytro_Livantsov.homeW_2_package;
+package homework_Assignments_Dmytro_Livantsov.homeW_2_OOP;
 
 import java.util.Scanner;
 
-public class HW_SmallestNumber_Task_2 {
+public class Task_2__SmallestNumber {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

@@ -1,4 +1,4 @@
-package homework_Assignments_Dmytro_Livantsov.homeW_2_package;
+package homework_Assignments_Dmytro_Livantsov.homeW_2_OOP;
 
 import java.time.LocalDate;
 import java.util.Scanner;
@@ -10,7 +10,10 @@ public class Person {
 
     public Person(){}
 
-    public Person(String firstName, String lastName){}
+    public Person(String firstName, String lastName){
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
     public void input(){
         Scanner scanner = new Scanner(System.in);

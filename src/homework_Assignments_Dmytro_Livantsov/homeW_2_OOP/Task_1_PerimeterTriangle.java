@@ -1,8 +1,8 @@
-package homework_Assignments_Dmytro_Livantsov.homeW_2_package;
+package homework_Assignments_Dmytro_Livantsov.homeW_2_OOP;
 
 import java.util.Scanner;
 
-public class HW_PerimeterTriangle_Task_1 {
+public class Task_1_PerimeterTriangle {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

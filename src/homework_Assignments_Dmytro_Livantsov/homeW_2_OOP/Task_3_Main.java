@@ -1,6 +1,6 @@
-package homework_Assignments_Dmytro_Livantsov.homeW_2_package;
+package homework_Assignments_Dmytro_Livantsov.homeW_2_OOP;
 
-public class HW_Main_Task_3 {
+public class Task_3_Main {
     public static void main(String[] args) {
 
         Person person_1 = new Person();
