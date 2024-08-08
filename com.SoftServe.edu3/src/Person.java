@@ -18,8 +18,7 @@ public class Person {
     }
 
     static int getAge(int birthYear){
-
-        return 2024-birthYear;
+     return 2024-birthYear;
     }
 
 
@@ -51,7 +50,6 @@ public class Person {
         System.out.println("Input the birth of year: ");
         int birthYear = SCANNER.nextInt();
         SCANNER.nextLine();
-
         person.setBirthYear(birthYear);
 
     }
