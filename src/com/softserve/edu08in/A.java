@@ -1,7 +1,7 @@
 package com.softserve.edu08in;
 
 //public class A extends Object {
-public class A {
+public class A extends AA {
     private int i;
 
     public A() {
