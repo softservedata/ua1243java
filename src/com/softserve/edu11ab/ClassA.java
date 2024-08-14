@@ -1,4 +1,4 @@
-package com.softserve.edu11a;
+package com.softserve.edu11ab;
 
 public class ClassA {
     public int i = 1;

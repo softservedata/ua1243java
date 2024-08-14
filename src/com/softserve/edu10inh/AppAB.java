@@ -1,7 +1,7 @@
 package com.softserve.edu10inh;
 
-import com.softserve.edu11a.ClassA;
-import com.softserve.edu11a.ClassB;
+import com.softserve.edu11ab.ClassA;
+import com.softserve.edu11ab.ClassB;
 
 public class AppAB {
 

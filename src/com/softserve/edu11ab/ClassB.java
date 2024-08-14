@@ -1,4 +1,4 @@
-package com.softserve.edu11a;
+package com.softserve.edu11ab;
 
 public class ClassB extends ClassA {
     public double i = 1.1;
