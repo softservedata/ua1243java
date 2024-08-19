@@ -1,4 +1,4 @@
-package homework_Assignments_Dmytro_Livantsov.homeW_2_OOP;
+package homework.dmytro.livantsov.homeW_2_OOP;
 
 public class Task_3_Main {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package homework_Assignments_Dmytro_Livantsov.homeW_1;
+package homework.dmytro.livantsov.homeW_1;
 
 import java.util.Scanner;
 
