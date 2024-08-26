@@ -84,3 +84,104 @@ public class Person {
         return DateOfBirth;
     }
 }
+//alternative solution
+/*
+public class Person {
+    private String firstName;
+    private String lastName;
+    private String DateOfBirth;
+
+    public Person() {
+        this.firstName = "";
+        this.lastName = "";
+        this.DateOfBirth = "";
+    }
+
+    public Person(String firstName, String lastName) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    private boolean isValidDateFormat(String dateStr) {
+        String datePattern = "\\d{2}\\.\\d{2}\\.\\d{4}";
+        return Pattern.matches(datePattern, dateStr);
+    }
+
+    private LocalDate parseDate(String dateStr) throws DateTimeParseException {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd.MM.yyyy");
+        return LocalDate.parse(dateStr, formatter);
+    }
+
+    public int getAge() {
+        if (!isValidDateFormat(DateOfBirth)) {
+            System.err.println("Invalid date format");
+            return -1;
+        }
+
+        LocalDate birthDate;
+        try {
+            birthDate = parseDate(DateOfBirth);
+        } catch (DateTimeParseException e) {
+            System.err.println("Invalid date format during parsing");
+            return -1;
+        }
+
+        LocalDate currentDate = LocalDate.now();
+        if (birthDate.isAfter(currentDate)) {
+            System.err.println("Date of birth cannot be in the future.");
+            return -1;
+        }
+
+        return Period.between(birthDate, currentDate).getYears();
+    }
+
+    public void input(String firstName, String lastName, String DateOfBirth) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.DateOfBirth = DateOfBirth;
+    }
+
+    public void output() {
+        System.out.println("Name: " + this.firstName);
+        System.out.println("Last name: " + this.lastName);
+        System.out.println("Date of birth: " + this.DateOfBirth);
+        int age = getAge();
+        if (age != -1) {
+            System.out.println("Age: " + age);
+        }
+    }
+
+    public void changeName(String fn, String ln) {
+        this.firstName = fn;
+        this.lastName = ln;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public void setBirthYear(String birthYear) {
+        this.DateOfBirth = birthYear;
+    }
+
+    public void setDateOfBirth(String dateOfBirth) {
+        DateOfBirth = dateOfBirth;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public String getDateOfBirth() {
+        return DateOfBirth;
+    }
+}
+*/
