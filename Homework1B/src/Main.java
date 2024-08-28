@@ -11,13 +11,12 @@ public class Main {
         System.out.print("Where do you live?");
         String address = scan.nextLine();
         System.out.println("Thank you for information!");
-        System.out.println("Name: "+name);
-        System.out.print("Address: "+address);
-
+        System.out.println("Name: " + name);
+        System.out.print("Address: " + address);
+        scan.close();// не забувай закривати сканер і форматувати код
 
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
-
 
 
     }
