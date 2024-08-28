@@ -11,13 +11,13 @@ public class Main {
 
         System.out.println("Hello and welcome! What is your radius ?");
         double radius = scan.nextDouble();
-        double area = Math.PI * radius * radius;
+        double area = Math.PI * radius * radius;//Math.PI * Math.pow(radius, 2); як альтернатива піднесення до квадрату
         double length = 2 * Math.PI * radius;
 
         System.out.println("Area of circle: " + area);
         System.out.print("Length of circle: " + length);
         System.out.println("Thank you!");
-
+        scan.close();
 
         //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
         // to see how IntelliJ IDEA suggests fixing it.
