@@ -2,7 +2,7 @@ package com.softserve.edu.orest.hw4;
 
 import java.util.Scanner;
 
-public class HomeTask3 {
+public class HomeWork3 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int code = scanner.nextInt();
