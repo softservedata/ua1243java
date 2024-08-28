@@ -1,5 +1,7 @@
 package persons;
 
+import java.time.Year;
+
 import static persons.Main.SCANNER;
 
 public class Person {
@@ -8,56 +10,57 @@ public class Person {
     private int birthYear;
 
     public Person() {
-        this("N/A","N/A"  );
-}
+        this("N/A", "N/A");
+    }
 
     public Person(String lastName, String firstName) {
         this.firstName = firstName;
         this.lastName = lastName;
-
     }
 
-    static int getAge(int birthYear){
-     return 2024-birthYear;
+    public int getAge(int birthYear) {
+        return Year.now().getValue() - birthYear;// better than use 2024
     }
 
 
-    public  static void changeName(String fn, String ln ){
+    public void changeName(String fn, String ln) {//оскільки ти будеш використовувати цей метод на об'єкті, не
+        //треба робити його статичним, можна, але не рекомендована практика.
 
-        System.out.println("Should the  name be changed? ");
+        System.out.println("Should the  name be changed?");
         String answer = SCANNER.nextLine();
         String yes = "Yes";
         String no = "No";
         if (answer.equalsIgnoreCase(yes)) {
-            fn = SCANNER.nextLine();
+            setFirstName(fn);
+            setLastName(ln);
             //Не знаю як тут далі перезаписати дані
-        }
-        else if (answer.equalsIgnoreCase(no)) {
+        } else if (answer.equalsIgnoreCase(no)) {
             System.out.println("ok,thank you.");
-        }
-        else {
+        } else {
             System.out.println("Please enter yes or no.");
         }
 
     }
-    public static void input (Person person) {
+
+    public void input() {//те саме зі static
         System.out.println("Input first name: ");
         String firstName = SCANNER.nextLine();
-        person.setFirstName(firstName);
+        setFirstName(firstName);
         System.out.println("Input last name: ");
         String lastName = SCANNER.nextLine();
-        person.setLastName(lastName);
+        setLastName(lastName);
         System.out.println("Input the birth of year: ");
         int birthYear = SCANNER.nextInt();
         SCANNER.nextLine();
-        person.setBirthYear(birthYear);
+        setBirthYear(birthYear);
 
     }
-    static public void output(Person person) {
-        System.out.println("Name: " + person.getFirstName());
-        System.out.println("Last name: " + person.getLastName());
-        System.out.println("Date of birth: " + person.getBirthYear());
-        System.out.println("Age: " + getAge(person.getBirthYear()));
+
+    public void output() {// так само прибрала static
+        System.out.println("Name: " + getFirstName());
+        System.out.println("Last name: " + getLastName());
+        System.out.println("Date of birth: " + getBirthYear());
+        System.out.println("Age: " + getAge(getBirthYear()));
     }
 
 
@@ -67,8 +70,6 @@ public class Person {
 
     public void setFirstName(String firstName) {
         this.firstName = firstName;
-
-
     }
 
     public String getLastName() {
