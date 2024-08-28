@@ -2,8 +2,6 @@ package task4;
 
 import java.util.Scanner;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     private static final Scanner SCANNER = new Scanner(System.in);
 
@@ -13,7 +11,7 @@ public class Main {
         int numbersOfStudents = SCANNER.nextInt();
         System.out.println("Count of students: " + numbersOfStudents);
         System.out.println("Please enter the number of currentSeason from 1 to 4: ");
-        CurrentSeason currentSeason = CurrentSeason.getByNumber(SCANNER.nextInt());
+        task4.CurrentSeason currentSeason = task4.CurrentSeason.getByNumber(SCANNER.nextInt());
         System.out.println("This number corresponds to: " + currentSeason.englishName);
         System.out.println("Це число відповідає: " + currentSeason.ukrainianName);
     }
