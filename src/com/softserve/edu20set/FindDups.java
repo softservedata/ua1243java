@@ -4,9 +4,9 @@ import java.util.*;
 
 public class FindDups {
 	public static void main(String[] args) {
-		// /*-
-		Set<String> s = new TreeSet<>();
-		//Set<String> s = new HashSet<>();
+		/*-
+		//Set<String> s = new TreeSet<>();
+		Set<String> s = new HashSet<>();
 		//List<String> s = new LinkedList<>();
 		for (int i = 0; i < args.length; i++) {
 		    if (!s.add(args[i])) {
@@ -14,8 +14,8 @@ public class FindDups {
 		    }
 		}
 		System.out.println("Elements: " + s);
-		// */
-		/*-
+		*/
+		// /*-
 		//Set<Employee> s = new HashSet<>();
 		Set<Employee> s = new TreeSet<>(new Employee.ByNameAndId());
 		//Set<Employee> s = new TreeSet<>();
@@ -32,7 +32,7 @@ public class FindDups {
 		b = s.add(null);
 		System.out.println("s.add(null) = " + b);
 		//
-//		System.out.println("Employee: " + s);
+		System.out.println("Employee: " + s); // s.toString();
 //		for (Employee current : s) {
 //			System.out.println("employee: " + current
 //					+ "  hashCode(): " + current.hashCode());
@@ -44,7 +44,7 @@ public class FindDups {
 //			System.out.println("employee: " + current // current.toString()
 //					+ "  hashCode(): " + (current != null ? current.hashCode(): null));
 //		}
-		*/
+		// */
 		/*-
 		//Set<String> s = new HashSet<>();
 		List<String> s = new LinkedList<>();
