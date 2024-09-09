@@ -1,7 +1,5 @@
 package Module6;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         Developer dev = new Developer("Taras",32, "Average Java developer",45678);
@@ -10,5 +8,4 @@ public class Main {
         System.out.println( emp.report());
 
         }
-
 }

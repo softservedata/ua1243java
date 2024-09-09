@@ -1,9 +1,5 @@
 package Module8;
 
-
-
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) throws CloneNotSupportedException {
 
@@ -15,7 +11,6 @@ public class Main {
         System.out.println(student2.info());
         System.out.println(student2.activity());
         System.out.println("=========================");
-
 
         Student student3 = (Student) student1.clone();
         student3.setCourseList("Python, C#, Topology");

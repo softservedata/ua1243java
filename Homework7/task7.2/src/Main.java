@@ -1,5 +1,4 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+
 public class Main {
     public static void main(String[] args) {
         Passengers[] passenger = {
@@ -15,9 +14,6 @@ public class Main {
         for (var passengers : passenger) {
             passengers.fly();
             System.out.println(passengers + "\n");
-
-            //System.out.println(passenger[0].report());
-            // System.out.println(passenger[1].report());
         }
     }
 }
