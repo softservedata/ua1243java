@@ -39,3 +39,6 @@ public class RangeOfNumbers_01 {
         }
     }
 }
+//Your code works correctly, great job! Here's a possible improvement:
+// Instead of hardcoding the numbers 5 and -5, it would be better to use constants for the range,
+// which will make future modifications easier.
