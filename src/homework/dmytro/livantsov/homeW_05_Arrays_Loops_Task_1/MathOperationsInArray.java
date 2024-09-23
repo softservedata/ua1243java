@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class MathOperationsInArray {
-
+    static Scanner scanner = new Scanner(System.in);
     public static void operationsInArray() {
         int[] arr = new int[5];
         int inputNumber = 0, firstPositiveNum = 0, cellOfSecondPositiveNum = 0;
@@ -12,7 +12,7 @@ public class MathOperationsInArray {
         int resultOfEvenNum = 0;
 
         boolean positiveNumActivated = false;
-        Scanner scanner = new Scanner(System.in);
+
 
 
         System.out.println("Add 5 numbers to your array.");
@@ -40,7 +40,7 @@ public class MathOperationsInArray {
 
 
         //
-        minNumInArr = arr[0];
+        minNumInArr = arr[0];//Similarly, minNumInArr should be initialized with Integer.MAX_VALUE for a more robust minimum calculation.
         for (int k = 0; k < arr.length; k++) {
             if (arr[k] <= minNumInArr) {
                 minNumInArr = arr[k];
@@ -51,8 +51,8 @@ public class MathOperationsInArray {
         System.out.println("\nMin number in arr = " + minNumInArr + " and his cell is " + minNumCell + ".");
 
 
-        for (int even : arr){
-            if (even % 2 == 0 && even != 0){
+        for (int even : arr) {
+            if (even % 2 == 0 && even != 0) {
                 resultOfEvenNum *= even;
             }
         }
@@ -60,3 +60,7 @@ public class MathOperationsInArray {
         System.out.println("\n\tSum of even numbers is " + resultOfEvenNum + ".");
     }
 }
+//The logic for finding the second positive number could be simplified
+// and combined with the first loop to avoid iterating over the array multiple times.
+// Similarly, the minimum number check and even number multiplication could be done in the same loop,
+// which would improve performance slightly.

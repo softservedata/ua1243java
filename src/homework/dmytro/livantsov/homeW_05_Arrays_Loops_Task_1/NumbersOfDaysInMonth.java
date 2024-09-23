@@ -18,3 +18,7 @@ public class NumbersOfDaysInMonth {
         }
     }
 }
+//The condition if (numberOfMonth >= 1 || numberOfMonth <= 12) contains a logical error due to the use of "or" (||).
+// It should use "and" (&&) to ensure the value is between 1 and 12.
+
+//You might consider adding a check for February (month 2) to account for leap years when February has 29 days.

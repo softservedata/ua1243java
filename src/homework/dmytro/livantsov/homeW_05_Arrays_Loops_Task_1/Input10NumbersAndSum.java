@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 public class Input10NumbersAndSum {
-
+    static Scanner scanner = new Scanner(System.in);
     public static void operationOnNumbers() {
 
         int[] arrayOf10Numbers = new int[10];
@@ -13,7 +13,7 @@ public class Input10NumbersAndSum {
         boolean isFiveNUmbersCalculated = true;
 
 
-        Scanner scanner = new Scanner(System.in);
+
         int inputNumber;
 
 
