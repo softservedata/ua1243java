@@ -9,3 +9,7 @@ public class MConsole {
         System.out.println(developer.report());
     }
 }
+//Just like in the first task, here we can also create an array of type `Employee[]`
+// that can hold both `Employee` and `Developer` objects. Thanks to polymorphism,
+// calling the `report()` method for each object in this array will automatically invoke the appropriate method:
+// either from the `Employee` class or the `Developer` class, depending on the object's type.
