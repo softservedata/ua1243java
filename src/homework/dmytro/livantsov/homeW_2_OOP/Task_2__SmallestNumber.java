@@ -10,24 +10,26 @@ public class Task_2__SmallestNumber {
         int numberTwo;
         int numberThree;
 
-        System.out.println("Input first number");
+        System.out.println("Input first number: ");
         numberOne = scanner.nextInt();
-        System.out.println("Input second number");
+        System.out.println("Input second number: ");
         numberTwo = scanner.nextInt();
-        System.out.println("Input third number");
+        System.out.println("Input third number: ");
         numberThree = scanner.nextInt();
 
-        System.out.println("The smallest number is " +
-                getSmallestNumber(numberOne, numberTwo, numberThree));
+        System.out.println("The smallest number is " + getSmallestNumber(numberOne, numberTwo, numberThree));
     }
 
-    public static int getSmallestNumber(int firstNumber, int secondNumber, int thirdNumber){
-            if (firstNumber <= secondNumber && firstNumber <= thirdNumber){
+    public static int getSmallestNumber(int firstNumber, int secondNumber, int thirdNumber) {
+
+        if (firstNumber <= secondNumber && firstNumber <= thirdNumber) {
             return firstNumber;
-        } else if (secondNumber <= thirdNumber){
+        } else if (secondNumber <= thirdNumber) {
             return secondNumber;
         } else {
-           return thirdNumber;
+            return thirdNumber;
         }
     }
 }
+// Метод getSmallestNumber можна замінити просто на Math.min()
+//  return Math.min(firstNumber, Math.min(secondNumber,thirdNumber));

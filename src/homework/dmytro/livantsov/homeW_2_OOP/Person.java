@@ -8,15 +8,16 @@ public class Person {
     private String lastName;
     private int birthYear;
 
-    public Person(){}
+    public Person() {
+    }
 
-    public Person(String firstName, String lastName){
+    public Person(String firstName, String lastName) {
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
-    public void input(){
-        Scanner scanner = new Scanner(System.in);
+    public void input() {
+        Scanner scanner = new Scanner(System.in);//
         System.out.println("Input first name: ");
         this.firstName = scanner.nextLine();
         System.out.println("Input last name: ");
@@ -25,23 +26,23 @@ public class Person {
         this.birthYear = scanner.nextInt();
     }
 
-    public void outPut(){
+    public void outPut() {
         System.out.println("First name is " + firstName + "\n" +
                 "Last name is " + lastName + "\n" +
                 this.firstName + " was born in " + birthYear);
     }
 
-    public void changeName(String fN, String lN){
+    public void changeName(String fN, String lN) {
         this.firstName = fN;
         this.lastName = lN;
     }
 
-    public void getAge(){
+    public void getAge() {
         LocalDate currentDate = LocalDate.now();
 
         int yearOfBirth = this.birthYear;
         int ageOfPerson = currentDate.getYear() - yearOfBirth;
-        System.out.println(this.firstName + " is " + ageOfPerson + " years old");
+        System.out.println(this.firstName + " is " + ageOfPerson + " years old");// it can be in method outPut()
     }
 
 

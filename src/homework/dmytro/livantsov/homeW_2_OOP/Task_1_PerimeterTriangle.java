@@ -30,9 +30,10 @@ public class Task_1_PerimeterTriangle {
         area = 0.25 × √( (a + b + c) × (-a + b + c) × (a - b + c) × (a + b - c) )
      */
     public static double areaOfTriangle(double firstSide, double secondSide, double thirdSide){
-        return (double) 0.25 *  Math.sqrt((firstSide + secondSide + thirdSide) *
+        return (double) 0.25 *  Math.sqrt((firstSide + secondSide + thirdSide) *// casting to double is redundant
                 (-firstSide + secondSide + thirdSide) *
                 (firstSide - secondSide + thirdSide) *
                 (firstSide + secondSide - thirdSide));
     }
 }
+//Хороша робота, можна було ще додати метод перевірки чи існує такий трикутник, але то як покращення
