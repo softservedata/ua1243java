@@ -1,0 +1,4 @@
+Number of lines in file1.txt: 0
+Longest line in file1.txt: 
+Name: Denys
+Birthday: September 15
