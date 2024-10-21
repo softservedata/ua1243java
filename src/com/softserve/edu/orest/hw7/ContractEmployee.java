@@ -1,9 +1,9 @@
 package com.softserve.edu.orest.hw7;
 
 public class ContractEmployee extends Employee{
-    private String federalTaxIdmember;
-    private double hourlyRate;
-    private int hoursWorked;
+    private final String federalTaxIdmember;
+    private final double hourlyRate;
+    private final int hoursWorked;
 
     public ContractEmployee(String employeeId, String name, String federalTaxIdmember, double hourlyRate, int hoursWorked) {
         super(employeeId, name);
@@ -18,7 +18,7 @@ public class ContractEmployee extends Employee{
     }
 
     @Override
-    public String employeeDetails() {
+    public String toString() {
         return String.format("ID: %s, Name: %s, Federal Tax ID: %s", employeeId, name, federalTaxIdmember);
     }
 }

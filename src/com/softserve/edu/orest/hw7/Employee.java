@@ -8,5 +8,4 @@ public abstract class Employee implements Payment{
         this.employeeId = employeeId;
         this.name = name;
     }
-    public abstract String employeeDetails();
 }

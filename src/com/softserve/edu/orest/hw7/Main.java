@@ -2,10 +2,8 @@ package com.softserve.edu.orest.hw7;
 
 import java.util.Arrays;
 
-public abstract class Main extends Employee{
-    public Main(String employeeId, String name) {
-        super(employeeId, name);
-    }
+public  class Main {
+
 
     public static void main(String[] args) {
         Employee[] employees = new Employee[3];
@@ -17,7 +15,7 @@ public abstract class Main extends Employee{
         Arrays.sort(employees, (e1, e2) -> Double.compare(e2.calculatePay(), e1.calculatePay()));
 
         for (Employee employee : employees) {
-            System.out.printf("ID: %s, Name: %s, Monthly Salary: %.2f\n", employee.employeeId, employee.name, employee.calculatePay());
+            System.out.println(employee.toString());
         }
     }
 }

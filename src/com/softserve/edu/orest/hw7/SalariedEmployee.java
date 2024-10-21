@@ -16,7 +16,7 @@ public class SalariedEmployee extends Employee{
     }
 
     @Override
-    public String employeeDetails() {
+    public String toString() {
         return String.format("ID: %s, Name: %s, Social Security: %s", employeeId, name, socialSecurityNumber);
     }
 }
