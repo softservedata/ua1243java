@@ -1,0 +1,5 @@
+1) Number of lines: 3
+2) The longest line (Length: 69):
+    text about your career text about your career text about your career
+name - Orest
+birthday - 25.04.1993
